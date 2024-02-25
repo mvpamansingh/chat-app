@@ -16,8 +16,8 @@ app.get('/', (req,res)=>{
 
 io.on('connection', (data)=>{
     console.log(`connection data: ${data}`);
-})
+});
 const port=process.env.PORT;
 app.listen(port,()=>{
     console.log(`server is running at  ${port}...`)
-})
+});
